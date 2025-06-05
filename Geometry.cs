@@ -1,8 +1,10 @@
-﻿namespace Geometry
+﻿
+namespace Geometry
 {
     public class Geometry
     {
-        public static void Main(string[] args)
+
+        public static void TestMain(string[] args)
         {
             Console.WriteLine("Введите координаты первого вектора:");
             Vector v1 = ReadVector();
@@ -10,7 +12,7 @@
             Console.WriteLine("Введите координаты второго вектора:");
             Vector v2 = ReadVector();
 
-            Console.WriteLine($"\nДлина первого вектора: {GetLength(v1):F2}");
+            Console.WriteLine($"Длина первого вектора: {GetLength(v1):F2}");
             Console.WriteLine($"Длина второго вектора: {GetLength(v2):F2}");
 
             Vector sum = Add(v1, v2);
